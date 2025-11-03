@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roja Shrestha — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">ROJA SHRESTHA</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Roja Shrestha</h1>
+          <p class="subtitle">Web Development Intern — Building clean, responsive websites</p>
+          <p class="lead">I’m learning front-end development and building real projects using HTML & CSS. I love simple, accessible design.</p>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-right">
+          <img class="profile" src="images/profile.jpg" alt="Roja Shrestha">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container two-col">
+        <div>
+          <h2>About Me</h2>
+          <p>I enjoy learning new technologies and building responsive websites using HTML and CSS. I aim to grow through hands-on projects and practical experience.</p>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div class="resume-card">
+          <h3>Resume</h3>
+          <p>Download my resume to see my education and skills.</p>
+          <a class="btn outline" id="resume" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h4>Personal Portfolio (This project)</h4>
+          <p>HTML & CSS portfolio built to showcase skills and projects.</p>
+        </article>
+        <article class="project">
+          <h4>Landing Page</h4>
+          <p>Static landing page to practice layout, grid and responsive design.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:stharooza3@gmail.com">stharooza3@gmail.com</a></p>
+      <p>Phone: 9860934210</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Roja Shrestha — Built for CodSoft Internship</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
