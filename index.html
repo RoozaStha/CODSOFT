@@ -1,89 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Roja Shrestha | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e4d5e52f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container nav">
-      <div class="logo">
-        <h1>Online Portfolio</h1>
-        <p>Just another My Blog site</p>
-      </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Roja<span>Shrestha</span></h1>
       <nav>
-        <ul class="menu">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#skills">SKILL</a></li>
-          <li><a href="#testimonial">TESTIMONIAL</a></li>
-          <li><a href="#experience">EXPERIENCE</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <a href="resume.pdf" class="btn">Resume</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-content fade-in">
-      <h2>ROJA SHRESTHA</h2>
-      <p>Hi, I am a Professional Developer and ICT Degree holder. I have experience in IT Sector as an ICT intern, passionate about web design and front-end development...</p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="container about-inner fade-in">
-      <div class="about-img">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Roja Shrestha</span></h2>
+        <p>Frontend Developer crafting responsive, user-focused web applications using React.js and modern web technologies.</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+      <div class="hero-image">
         <img src="images/profile.jpg" alt="Roja Shrestha">
       </div>
-      <div class="about-text">
-        <h3>ABOUT ME</h3>
-        <p>I am a Developer who blends expertise with industry know-how to guide your next project. I focus on creating responsive, modern, and interactive web experiences.</p>
-        <p>As a front-end learner, I use HTML, CSS, and JavaScript to design clean interfaces. I enjoy improving my skills through projects, and I’m passionate about software development and technology.</p>
-        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Passionate Frontend Developer focused on building creative, user-friendly, and efficient applications. 
+        Skilled in modern frameworks and committed to writing clean, maintainable code. 
+        I thrive on teamwork, curiosity, and continuous learning.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skill-grid">
+        <div><h3>Frontend</h3><p>HTML, CSS, JavaScript, React.js, TailwindCSS</p></div>
+        <div><h3>Backend & DB</h3><p>Node.js, Express.js, MongoDB, MySQL</p></div>
+        <div><h3>Testing</h3><p>Cypress, Selenium, Postman, TestNG</p></div>
+        <div><h3>Version Control</h3><p>Git, GitHub</p></div>
+        <div><h3>Project Tools</h3><p>ClickUp, Google Docs</p></div>
+        <div><h3>Cybersecurity Tools</h3><p>Acunetix, Burp Suite</p></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact fade-in">
+  <!-- Projects -->
+  <section class="projects" id="projects">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:stharooza3@gmail.com">stharooza3@gmail.com</a></p>
-      <p>Phone: 9860934210</p>
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>EduSanchal</h3>
+          <p>Role-based MERN School Management System with JWT authentication, dashboards, and notifications.</p>
+        </div>
+        <div class="project-card">
+          <h3>SwadExpress</h3>
+          <p>MERN food ordering app with Stripe integration and mobile-first responsive design.</p>
+        </div>
+        <div class="project-card">
+          <h3>Doctor Appointment Website</h3>
+          <p>React + MongoDB + Clerk-based secure booking system with CRUD operations.</p>
+        </div>
+        <div class="project-card">
+          <h3>Real Estate Website</h3>
+          <p>React + Web3Forms platform for property listings with inquiry validation.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Roja Shrestha — All Rights Reserved.</p>
+  <!-- Experience -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Voyager IT Company</strong> – Project Manager Associate Intern <em>(Dec 2024 – Mar 2025)</em></li>
+        <li><strong>Excelerate Company</strong> – Project Management Intern (Virtual) <em>(Feb – Mar 2025)</em></li>
+        <li><strong>Tutor & Facilitator</strong> – Mathematics Training & Data Analysis <em>(2022 – 2024)</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>Bachelor’s in Information Management (BIM)</strong> – St. Xavier’s College, GPA: 3.91</p>
+      <p><strong>GCE A Levels</strong> – St. Xavier’s College</p>
+      <p><strong>School (RIBS)</strong> – Rhododendron Int’l H.S. School, CGPA: 3.75</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><i class="fa-solid fa-location-dot"></i> Kalanki, Bagmati, Nepal</p>
+      <p><i class="fa-solid fa-phone"></i> +977-9860934210</p>
+      <p><i class="fa-solid fa-envelope"></i> stharooza3@gmail.com</p>
+      <div class="socials">
+        <a href="https://linkedin.com/in/roja-shrestha" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/RoozaStha" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://rojashrestha.com.np" target="_blank"><i class="fa-solid fa-globe"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Roja Shrestha. All Rights Reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Scroll fade animation
-    const faders = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('appear');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-
-    faders.forEach(fade => observer.observe(fade));
-  </script>
 </body>
 </html>
