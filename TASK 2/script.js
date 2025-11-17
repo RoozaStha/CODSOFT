@@ -1,26 +1,23 @@
 const display = document.getElementById("display");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".btn");
 
-let currentInput = "";
+let input = "";
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const value = button.textContent;
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const value = btn.textContent;
 
-    if (value === "C") {
-      currentInput = "";
-      display.value = "0";
-    } else if (value === "=") {
+    if (value === "=") {
       try {
-        display.value = eval(currentInput) || "0";
-        currentInput = display.value;
+        display.value = eval(input);
+        input = display.value;
       } catch {
         display.value = "Error";
-        currentInput = "";
+        input = "";
       }
     } else {
-      currentInput += value;
-      display.value = currentInput;
+      input += value;
+      display.value = input;
     }
   });
 });
