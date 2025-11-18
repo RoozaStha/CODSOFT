@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blue Calculator (Safe Logic)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <div class="calculator">
-    <input type="text" id="display" value="0" disabled>
+    <input type="text" id="display" value="0" disabled aria-label="calculator display">
 
-    <div class="buttons">
+    <div class="buttons" role="group" aria-label="calculator buttons">
       <button class="btn">7</button>
       <button class="btn">8</button>
       <button class="btn">9</button>
